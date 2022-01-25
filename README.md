@@ -4,7 +4,7 @@
 
 (link를 누르면 이동합니다)
 
-### - [Styled Components](https://github.com/dudgns2947/Nexflix_Clone/blob/main/README/StyledComponents.md)
+### - [Styled Components](https://github.com/dudgns2947/Netflix_Clone/blob/master/README/StyledComponents.md)
 
 ### - Recoil
 
@@ -16,6 +16,6 @@
 
 ### - React Spring
 
-### - [Typescript](https://github.com/dudgns2947/Nexflix_Clone/blob/main/README/TypeScripts.md)
+### - [Typescript](https://github.com/dudgns2947/Netflix_Clone/blob/master/README/TypeScripts.md)
 
 ### - Firebase
