@@ -10,6 +10,12 @@
 
 ### - [Styled Components](https://github.com/dudgns2947/Netflix_Clone/blob/master/README/StyledComponents.md)
 
+- Extending
+- Access HTML(as, attrs)
+- Animation
+- Pseudo Seletors
+- ThemeProvider
+
 ### - Recoil
 
 ### - React Query

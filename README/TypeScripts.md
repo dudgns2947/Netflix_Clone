@@ -42,7 +42,7 @@ npm i --save-dev @types/styled-components
 
 # interfaces
 
-- object 형태(타입)를 TypeScript에게 설명해주는 것(단순히 object 설명)
+- object 형태(타입)를 TypeScript에게 설명해주는 것(단순히 object를 설명)
 
 ### 사용법
 
