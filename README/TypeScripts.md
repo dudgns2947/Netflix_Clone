@@ -39,3 +39,37 @@ npm install --save typescript @types/node @types/react @types/react-dom @types/j
 ```
 npm i --save-dev @types/styled-components
 ```
+
+# interfaces
+
+- object 형태(타입)를 TypeScript에게 설명해주는 것(단순히 object 설명)
+
+### 사용법
+
+> #### step1)
+
+```typescript
+interface myDivProps {
+  bgColor: string;
+}
+
+const myDiv = styled.div<myDivProps>`
+  width: 100px;
+  height: 100px;
+  background-color: ${(props) => props.bgColor};
+`;
+
+interface Props {
+  bgColor: string;
+}
+```
+
+> #### step2)
+
+```typescript
+function Circle({ bgColor }: Props) {  --> bgColor의 type은 Props의 object이다.
+  return <myDiv />;
+}
+```
+
+- 잘못된 props를 보내거나, interface에 없는 object를 다루게 된다면 오류가 발생하게 된다.(장점!)
