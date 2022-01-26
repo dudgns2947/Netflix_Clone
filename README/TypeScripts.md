@@ -20,7 +20,7 @@ function plus = (a:number, b:number) => a+b;   --> plus(2,3) = 5 : O
 
 ## 사용법
 
-[참고사이트](https://create-react-app.dev/docs/adding-typescript#installation)
+### [참고사이트(Link)](https://create-react-app.dev/docs/adding-typescript#installation)
 
 > install: project를 만들 때 사용 : 추천하는 방법
 
@@ -106,14 +106,51 @@ function App() {
   const [value, setValue] = useState("");   --> stast 부여
   const onChange = (event: React.FormEvent<HTMLInputElement>) => {  --> event는 기본적으로 any type이지만 typescript로 type을 부여했다
     const {
-      currentTarget: { value },
+      currentTarget: { value },  --> React에선 target이 아니라 currentTarget을 사용함
     } = event;
     setValue(value);
   };
-  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {  --> 위와 상동
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {  --> HTMLFromElemet에 사용됨.
     event.preventDefault();
     console.log("hello", value);
   };
+
+    return (
+    <div>
+      <form onSubmit={onSubmit}>
+        <input
+          value={value}
+          onChange={onChange}
+          type="text"
+          placeholder="username"
+        />
+        <button>Log in</button>
+      </form>
+    </div>
+  );
 ```
 
 ### [React Event 참고사이트(Link)](https://reactjs.org/docs/events.html)
+
+# Themes
+
+### [참고사이트(Link)](https://styled-components.com/docs/api#typescript)
+
+> step1) make file "styled.d.ts" then pasted
+
+```typescript
+// import original module declarations
+import "styled-components";
+
+// and extend them!
+declare module "styled-components" {
+  export interface DefaultTheme {   --> DefaultTheme을 제공해준다.
+    borderRadius: string;
+
+    colors: {
+      main: string;
+      secondary: string;
+    };
+  }
+}
+```

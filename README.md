@@ -9,7 +9,8 @@
 **typescript의 react-app 만드는 방법 먼저 볼 것!**
 
 - interface
-- Optional props
+- Optional props (Styped Components 먼저 볼 것)
+- Themes (Styped Components 먼저 볼 것)
 
 ### - [Styled Components](https://github.com/dudgns2947/Netflix_Clone/blob/master/README/StyledComponents.md)
 
@@ -18,12 +19,15 @@
 - Animation
 - Pseudo Seletors
 - ThemeProvider
+- Reset css(추가)
 
 ### - Recoil
 
 ### - React Query
 
 ### - React Router DOM
+
+- Nested Router
 
 ### - Apex Charts
 
