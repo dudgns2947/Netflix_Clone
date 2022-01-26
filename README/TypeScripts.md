@@ -68,8 +68,52 @@ interface Props {
 
 ```typescript
 function Circle({ bgColor }: Props) {  --> bgColor의 type은 Props의 object이다.
-  return <myDiv />;
+  return <myDiv bgColor={bgColor} />;
 }
 ```
 
 - 잘못된 props를 보내거나, interface에 없는 object를 다루게 된다면 오류가 발생하게 된다.(장점!)
+
+## Optional Props
+
+```typescript
+interface myDivProps {
+  bgColor: string;
+}
+```
+
+-> 위의 경우에는 bgColor라는 props는 **반드시** 있어야 한다는 점이다.(없으면 오류 발생)
+
+따라서 필수적으로 사용하지 않아도 되는 props는 아래와 같이 사용하며 이를 Optional Props라고 한다.
+
+```typescript
+interface myDivProps {
+  bgColor?: string; --> ?를 붙임
+}
+
+function Circle({ bgColor }: Props) {
+  return <myDiv bgColor={bgColor ?? "black"} />; --> props가 없을경우 default 값으로 balck을 가진다
+```
+
+# Ts & React: events
+
+- events에도 type을 부여할 수 있다.
+
+```typescript
+import React, { useState } from "react";
+
+function App() {
+  const [value, setValue] = useState("");   --> stast 부여
+  const onChange = (event: React.FormEvent<HTMLInputElement>) => {  --> event는 기본적으로 any type이지만 typescript로 type을 부여했다
+    const {
+      currentTarget: { value },
+    } = event;
+    setValue(value);
+  };
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {  --> 위와 상동
+    event.preventDefault();
+    console.log("hello", value);
+  };
+```
+
+### [React Event 참고사이트(Link)](https://reactjs.org/docs/events.html)
