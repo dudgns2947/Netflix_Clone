@@ -19,7 +19,7 @@
 - Animation
 - Pseudo Seletors
 - ThemeProvider
-- Reset css(추가)
+- Reset CSS(추가)
 
 ### - Recoil
 
@@ -27,10 +27,23 @@
 
 ### - React Router DOM
 
+- CSR
 - Nested Router
+- Link components (to attributes)
+- useEffect() & fetch() & useLocation()
 
 ### - Apex Charts
 
 ### - React Spring
 
 ### - Firebase
+
+### VSC Extention
+
+- Prettier
+- Auto Import
+- Code Runner
+- ESLint
+- ES7+ React/Redux/React-Native snippets
+- Reactjs code snippets
+- vscode-styled-components
