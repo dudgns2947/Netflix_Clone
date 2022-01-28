@@ -27,10 +27,11 @@
 
 ### - React Router DOM
 
-- CSR
+- React Hooks
+- useEffect() & fetch() & useLocation() etc..
 - Nested Router
+- CSR
 - Link components (to attributes)
-- useEffect() & fetch() & useLocation()
 
 ### - Apex Charts
 
