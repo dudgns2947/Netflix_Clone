@@ -37,7 +37,9 @@
 
 ### - Recoil
 
-### - [Apex Charts]()
+### - [Apex Charts](https://github.com/dudgns2947/Netflix_Clone/blob/master/README/ApexCharts.md)
+
+- How to use Library
 
 ### - React Spring
 
