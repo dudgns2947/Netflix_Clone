@@ -1,7 +1,8 @@
 # React Query
 
 React 어플리케이션에서 서버 state를 fetching, caching, synchronizing, updating할 수 있도록 도와주는 라이브러리 이다.
-[참고사이트1 (Link)](https://react-query.tanstack.com/reference/useQuery#_top)
+
+### [참고사이트1 (Link)](https://react-query.tanstack.com/reference/useQuery#_top)
 
 > step1) install react-query
 
@@ -66,4 +67,42 @@ const { isLoading, data } = useQuery("query-key", fetchfun);
 # Query Key
 
 React Query는 Query Key를 기반으로 쿼리 캐싱을 관리한다.
-[참고사이트2 (Link)](https://react-query.tanstack.com/guides/query-keys)
+
+### [참고사이트2 (Link)](https://react-query.tanstack.com/guides/query-keys)
+
+# Devtools
+
+React 개발자도구는 import만 하면 render할 수 있는 component이며, 이를 사용하면 cache에 있는 query들을 볼 수 있다.
+
+어떤 query를 사용했는지 시각적으로 매우 보기좋게 해 줌.
+
+### [참고사이트3 (Link)](https://react-query.tanstack.com/devtools#_top)
+
+> step1)
+
+```typescript
+import { ReactQueryDevtools } from "react-query/devtools";
+```
+
+> step2) Rendering in App.tsx
+
+```typescript
+function App() {
+  return (
+    <>
+      <.../>
+      <Router />
+      <ReactQueryDevtools initialIsOpen={true} />
+    </>
+  );
+}
+```
+
+> step 3) Use the trigger in your page
+
+```
+1. Refetch
+2. Invalidate
+3. Reset
+4. Remove
+```

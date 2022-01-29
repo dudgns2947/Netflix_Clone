@@ -21,10 +21,6 @@
 - ThemeProvider
 - Reset CSS(추가)
 
-### - Recoil
-
-### - React Query
-
 ### - React Router DOM
 
 - React Hooks
@@ -33,7 +29,15 @@
 - CSR
 - Link components (to attributes)
 
-### - Apex Charts
+### - [React Query](https://github.com/dudgns2947/Netflix_Clone/blob/master/README/ReactQuery.md)
+
+- Query Keys
+- Devtools
+- Minimize React hooks
+
+### - Recoil
+
+### - [Apex Charts]()
 
 ### - React Spring
 
