@@ -7,6 +7,7 @@ import { Theme } from "./theme";
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={Theme}>
+      <h1>Hello World</h1>
       <App />
     </ThemeProvider>
   </React.StrictMode>,

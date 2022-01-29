@@ -1,7 +1,6 @@
 import React from "react";
 import Router from "./Router";
 import { createGlobalStyle } from "styled-components";
-import styled from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
